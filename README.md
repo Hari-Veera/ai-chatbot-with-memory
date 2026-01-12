@@ -38,6 +38,7 @@ The chatbot maintains conversational context, remembers user-specific informatio
 
 ## 📂 Project Structure
 
+```
 stan/
 ├─ frontend/
 │ ├─ src/
@@ -58,6 +59,17 @@ stan/
 │ ├─ server.js
 │ ├─ .env
 │ └─ package.json
+│
+├─ screenshots/
+│ ├─ chat-ui.png
+│ ├─ memory-recall.png
+│ └─ dark-mode.png
+│
+├─ README.md
+├─ .gitignore
+├─ package.json
+└─ package-lock.json
+```
 
 ---
 
@@ -75,15 +87,28 @@ stan/
 ```bash
 cd backend
 npm install
+```
 
+Create a `.env` file inside the `backend` folder:
+
+```env
 PORT=5000
 MONGO_URI=mongodb://127.0.0.1:27017/chatbot
 GEMINI_API_KEY=your_gemini_api_key_here
+```
 
+Start the backend server:
+
+```bash
 npm start
+```
 
+Backend runs at:
+```
 http://localhost:5000
 ```
+
+---
 
 ### 🔹 Frontend Setup
 
@@ -91,6 +116,28 @@ http://localhost:5000
 cd frontend
 npm install
 npm run dev
+```
 
+Frontend runs at:
+```
 http://localhost:5173
+```
 
+---
+
+## 📸 Screenshots
+
+### Chat Interface
+![Chat UI](screenshots/chat-ui.png)
+
+### Memory Persistence
+![Memory Recall](screenshots/memory-recall.png)
+
+### Dark Mode
+![Dark Mode](screenshots/dark-mode.png)
+
+
+---
+
+## 👤 Author
+**Medipudi Hari Veera**
